@@ -1,0 +1,6 @@
+RewriteEngine On
+ErrorDocument 404 /404.html
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+Header set Cache-Control "max-age=900, public"
