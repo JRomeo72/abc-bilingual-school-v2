@@ -53,6 +53,7 @@ const CACHE_NAME = 'ABC_v22.06.03',
         '/assets/img/circulares/circular-03.jpg',
         '/assets/img/circulares/circular-04.jpg',
         // ? Fechas Imp. *********************
+        '/assets/img/eventos/fechas.jpg',
         '/assets/img/eventos/junio-01.jpg',
         '/assets/img/eventos/junio-02.jpg',
         '/assets/img/eventos/junio-03.jpg',
