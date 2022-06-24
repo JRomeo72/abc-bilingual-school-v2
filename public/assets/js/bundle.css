@@ -32707,6 +32707,29 @@ h1, h2, h3, h4, h5, h6, .h1, .h2 {
   margin-right: 10px;
 }
 
+.about-us-section #valores {
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+.about-us-section #valores h5 {
+  color: #fbb802;
+}
+.about-us-section #valores .elements {
+  padding-left: 40px;
+}
+.about-us-section #valores .elements ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about-us-section #valores .elements ul li {
+  color: white;
+  margin-right: 25px;
+  font-weight: 400;
+}
+
 /**#########################################*/
 /**#####   ESTILOS SECCION PARALLAX   ######*/
 /**#########################################*/
