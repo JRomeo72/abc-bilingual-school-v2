@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.08.10-1',
+const CACHE_NAME = 'ABC_v22.08.11-1',
     urlsToCache = [
         // ? Views ***************************
         '/',
@@ -45,8 +45,8 @@ const CACHE_NAME = 'ABC_v22.08.10-1',
 
         // ! IMAGENES 
         // ? Circulares ********************** 
-        '/assets/img/circulares/circular-00.jpg',
-        '/assets/img/circulares/circular-00.pdf',
+        '/assets/img/circulares/circular-01.jpg',
+        '/assets/img/circulares/circular-01.pdf',
         // '/assets/img/circulares/circular-01.jpg',
         // '/assets/img/circulares/circular-01.pdf',
         // '/assets/img/circulares/circular-02.jpg',
