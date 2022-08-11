@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.08.09',
+const CACHE_NAME = 'ABC_v22.08.10',
     urlsToCache = [
         // ? Views ***************************
         '/',
@@ -22,17 +22,17 @@ const CACHE_NAME = 'ABC_v22.08.09',
         '/contact-us',
         '/contactanos',
 
-        // ? Javascript + css ****************
+        // ? Javascript + css **************** 
         '/App.js',
         '/assets/js/bundle.js',        
         '/assets/js/bundle.css',        
 
-        // ? Documentos **********************
+        // ? Documentos ********************** 
         // '/assets/documents/Manual-de-convivencia-2021-2022.pdf',
         // '/assets/documents/Manual-Teams.pdf',
         // '/assets/documents/Calendario-2021-2022.pdf',
 
-        // ? Fuentes Tipograficas ************
+        // ? Fuentes Tipograficas ************ 
         '/assets/font/coolvetica/coolvetica_rg.ttf',
         '/assets/font/roboto/Roboto-Bold.ttf',
         '/assets/font/roboto/Roboto-Light.ttf',
@@ -43,41 +43,37 @@ const CACHE_NAME = 'ABC_v22.08.09',
         '/assets/webfonts/fa-regular-400.ttf',
         '/assets/webfonts/fa-solid-900.ttf',
 
-        // ! IMAGENES
-        // ? Circulares **********************
+        // ! IMAGENES 
+        // ? Circulares ********************** 
         '/assets/img/circulares/circular-00.jpg',
         '/assets/img/circulares/circular-00.pdf',
-        '/assets/img/circulares/circular-01.jpg',
-        '/assets/img/circulares/circular-01.pdf',
-        '/assets/img/circulares/circular-02.jpg',
-        '/assets/img/circulares/circular-03.jpg',
-        '/assets/img/circulares/circular-04.jpg',
-        // ? Fechas Imp. *********************
+        // '/assets/img/circulares/circular-01.jpg',
+        // '/assets/img/circulares/circular-01.pdf',
+        // '/assets/img/circulares/circular-02.jpg',
+        // '/assets/img/circulares/circular-03.jpg',
+        // '/assets/img/circulares/circular-04.jpg',
+        // ? Fechas Imp. ********************* 
         '/assets/img/eventos/fechas.jpg',
-        '/assets/img/eventos/junio-01.jpg',
-        '/assets/img/eventos/junio-02.jpg',
-        '/assets/img/eventos/junio-03.jpg',
-        '/assets/img/eventos/junio-04.jpg',
-        '/assets/img/eventos/junio-05.jpg',
-        '/assets/img/eventos/junio-06.jpg',
-        '/assets/img/eventos/junio-07.jpg',
-        '/assets/img/eventos/junio-08.jpg',
-        '/assets/img/eventos/junio-09.jpg',
-        '/assets/img/eventos/junio-10.jpg',
-        '/assets/img/eventos/junio-11.jpg',
-        '/assets/img/eventos/junio-12.jpg',
-        '/assets/img/eventos/junio-13.jpg',
-        '/assets/img/eventos/junio-14.jpg',
-        // ? Imagenes Galeria ****************
+        '/assets/img/eventos/agosto-01.jpg',
+        '/assets/img/eventos/agosto-02.jpg',
+        '/assets/img/eventos/agosto-03.jpg',
+        '/assets/img/eventos/agosto-04.jpg',
+        '/assets/img/eventos/agosto-05.jpg',
+        '/assets/img/eventos/agosto-06.jpg',
+        '/assets/img/eventos/agosto-07.jpg',
+        '/assets/img/eventos/agosto-08.jpg',
+        '/assets/img/eventos/agosto-09.jpg',
+        '/assets/img/eventos/agosto-10.jpg',
+        // ? Imagenes Galeria **************** 
         '/assets/img/fotos/foto-01.jpg',
         '/assets/img/fotos/foto-02.jpg',
         '/assets/img/fotos/foto-03.jpg',
         '/assets/img/fotos/foto-04.jpg',
-        // ? Favicon *************************
+        // ? Favicon ************************* 
         '/assets/img/icons/favicon-16x16.png',
         '/assets/img/icons/favicon-32x32.png',
         '/assets/img/icons/favicon-96x96.png',
-        // ? Imagenes Lightbox ***************
+        // ? Imagenes Lightbox *************** 
         '/assets/img/lightbox/close.png',
         '/assets/img/lightbox/default-skin.png',
         '/assets/img/lightbox/default-skin.svg',
@@ -85,7 +81,7 @@ const CACHE_NAME = 'ABC_v22.08.09',
         '/assets/img/lightbox/next.png',
         '/assets/img/lightbox/preloader.gif',
         '/assets/img/lightbox/prev.png',
-        // ? Logos ***************************
+        // ? Logos *************************** 
         '/assets/img/logos/abc-logo.jpg',
         '/assets/img/logos/Logo_McGraw-Hill.jpg',
         '/assets/img/logos/Logo_alianza-francesa.png',
@@ -93,7 +89,7 @@ const CACHE_NAME = 'ABC_v22.08.09',
         '/assets/img/logos/Logo_Santillana.png',
         '/assets/img/logos/Logo_t-box.png',
         '/assets/img/logos/NIPSA_Logo.png',
-        // ? Sin Conexión ********************
+        // ? Sin Conexión ******************** 
         '/assets/img/offline/formBackEs.jpg',
         '/assets/img/offline/formBackIn.jpg',
         '/assets/img/offline/mapBackEs.jpg',
@@ -102,11 +98,11 @@ const CACHE_NAME = 'ABC_v22.08.09',
         '/assets/img/offline/smallFormBackIn.png',
         '/assets/img/offline/videoBackEs.jpg',
         '/assets/img/offline/videoBackIn.jpg',
-        // ? Slider **************************
+        // ? Slider ************************** 
         '/assets/img/slider/slider_1.jpg',
         '/assets/img/slider/slider_2.jpg',
         '/assets/img/slider/slider_3.jpg',
-        // ? Imagenes SVG ********************
+        // ? Imagenes SVG ******************** 
         '/assets/img/svg/404.svg',
         '/assets/img/svg/arrow_left.svg',
         '/assets/img/svg/arrow_right.svg',
@@ -119,13 +115,13 @@ const CACHE_NAME = 'ABC_v22.08.09',
         '/assets/img/svg/overlay_stars.svg',
         '/assets/img/svg/rocket.svg',
         '/assets/img/svg/x.svg',
-        // ? Imagenes Parallax ***************
+        // ? Imagenes Parallax *************** 
         '/assets/img/parallax.jpg',
         '/assets/img/bg_purple.png',
-        // ? Modal - Menu ********************
+        // ? Modal - Menu ******************** 
         '/assets/img/menu-cafeteria.jpg',
         '/assets/img/menu-logo.jpg',
-        // ? Banderas ************************
+        // ? Banderas ************************ 
         '/assets/img/el-salvador.png',
         '/assets/img/usa.png',
     ]
