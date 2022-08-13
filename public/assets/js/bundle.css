@@ -32560,8 +32560,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2 {
 /**#########################################*/
 /**#########   ESTILOS CARRUSEL   ##########*/
 /**#########################################*/
+.carousel-inner {
+  position: relative;
+  --aspect-ratio: 25/8;
+  height: 0;
+  padding-bottom: calc(100% / (var(--aspect-ratio)));
+}
+
 .carousel-item {
-  height: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: no-repeat center center scroll;
   background-size: cover;
 }
@@ -32611,6 +32622,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2 {
 }
 
 @media (max-width: 991px) {
+  .carousel-inner {
+    --aspect-ratio: 21/11;
+  }
+
   .texto-carrusel .display-3,
 .texto-carrusel-3 .display-3 {
     font-size: 250%;
@@ -32622,6 +32637,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2 {
   }
 }
 @media (max-width: 767px) {
+  .carousel-inner {
+    --aspect-ratio: 21/15;
+  }
+
   .texto-carrusel .display-3,
 .texto-carrusel-3 .display-3 {
     font-size: 200%;

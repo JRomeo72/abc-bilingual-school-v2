@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.08.11-1',
+const CACHE_NAME = 'ABC_v22.08.12',
     urlsToCache = [
         // ? Views ***************************
         '/',
@@ -102,6 +102,12 @@ const CACHE_NAME = 'ABC_v22.08.11-1',
         '/assets/img/slider/slider_1.jpg',
         '/assets/img/slider/slider_2.jpg',
         '/assets/img/slider/slider_3.jpg',
+        '/assets/img/slider/slider_4.jpg',
+        '/assets/img/slider/slider_5.jpg',
+        '/assets/img/slider/slider_6.jpg',
+        '/assets/img/slider/slider_7.jpg',
+        '/assets/img/slider/slider_8.jpg',
+        '/assets/img/slider/slider_9.jpg',
         // ? Imagenes SVG ******************** 
         '/assets/img/svg/404.svg',
         '/assets/img/svg/arrow_left.svg',
