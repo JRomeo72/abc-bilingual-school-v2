@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.08.16';
+const CACHE_NAME = 'ABC_v22.08.16-1';
 urlsToCache = [
     // ? Views ***************************
     '/',
@@ -164,7 +164,7 @@ self.addEventListener('activate', e => {
             // Le indica al SW activar el cache actual
             // .then(() => self.clients.claim())
     )
-    self.clients.claim()
+    clients.claim()
 })
 
 //cuando el navegador recupera una url
