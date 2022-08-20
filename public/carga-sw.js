@@ -3,14 +3,31 @@ if ('serviceWorker' in navigator)
 	window.addEventListener('load', function(){
 
 		navigator.serviceWorker.register('/sw.js')
-		.then(reg =>{
-			console.log('Registro de SW exitoso', reg)
-			// reg.addEventListener('updatefound', () => {
-			// 	const installingWorker = reg.installing;
-			// 	console.log('A new service worker is being installed:', installingWorker)
-			// });
-		})
-		.catch(err => console.warn('Error al tratar de registrar el sw', err));
+			.then(reg =>{
+
+				console.log('Registro de SW exitoso', reg)
+
+				setInterval(() => {
+					reg.update()
+					console.log('Comprobando')
+				}, 10000);
+
+				if(navigator.serviceWorker.controller) {
+
+					reg.addEventListener('updatefound', () => {
+						const installingWorker = reg.installing;
+						console.log('A new service worker is being installed:', installingWorker)
+						alert('Hay una version nueva de esta Web App, el navegador se reiniciara para efectuar los cambios');
+						location.reload();
+					});
+				}
+			})
+			.catch(err => console.warn('Error al tratar de registrar el sw', err));
+
+		// navigator.serviceWorker.oncontrollerchange = () => {
+		// 	alert('Hay una version nueva de esta Web App, el navegador se reiniciara para efectuar los cambios');
+		// 	location.reload();
+		// };
 
 		// if(!navigator.serviceWorker.controller) {
 
@@ -28,6 +45,7 @@ if ('serviceWorker' in navigator)
 			// 	console.log('Refresh Web');
 			// }
 		// };
+
 	});
 	
 }

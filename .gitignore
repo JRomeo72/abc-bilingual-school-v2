@@ -4,4 +4,5 @@
 .DS_Store
 prepros.config
 sw copy.js
+carga-sw copy.js
 old-index.html
