@@ -1,0 +1,34 @@
+/**#########################################*/
+/**########   ESTILOS ButtoFloat   #########*/
+/**#########################################*/
+.buttonfloat {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    width: 50px;
+    z-index: 5;
+    cursor: pointer;
+  }
+  .buttonfloat .flag {
+    width: 50px;
+  }
+  
+  /**#########################################*/
+  /**#####   ESTILOS Boton Reapertura   ######*/
+  /**#########################################*/
+  
+  .reapertura {
+    position: fixed;
+    right: 0px;
+    top: 110px;
+    z-index: 5;
+    cursor: pointer;
+    /* line-height: 0;
+    padding: 10px 2px 0px 2px;
+    background-color: #eeeeee;
+    border: solid 1px #000000; */
+  }
+  
+  .reapertura .soon {
+    width: 200px;
+  }

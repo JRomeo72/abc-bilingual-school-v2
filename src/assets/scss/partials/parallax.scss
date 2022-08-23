@@ -1,0 +1,12 @@
+/**#########################################*/
+/**#####   ESTILOS SECCION PARALLAX   ######*/
+/**#########################################*/
+
+.jarallax {
+    height: 50vh;
+    position: relative;
+}
+  
+.jarallax .jarallax-img {
+    object-position: 10% !important;
+}

@@ -1,0 +1,141 @@
+/**#########################################*/
+/**###########   ESTILOS MENU   ############*/
+/**#########################################*/
+.rounded-xl {
+    border-radius: 0.4rem;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .navbar-toggler:hover > .navbar-toggler-icon {
+    color: yellow;
+  }
+  
+  .navbar-toggler:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  
+  
+  #navbar-top {
+    position: relative;
+    z-index: 4;
+    padding: 0 5px;
+  }
+  
+  #navbar-fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white !important;
+    opacity: 0;
+    z-index: 3;
+    padding: 0 5px;
+  }
+  
+  #navbar-top, #navbar-fixed {
+  
+    .abc-logo {
+      width: 80px;
+    }
+    
+    .texto-brand {
+      font-family: "Coolvetica", sans-serif;
+      font-size: 30px;
+    }
+      
+    .navbar-nav .nav-link,
+    .navbar-nav .dropdown-item {
+      padding: 8px 20px !important;
+      color: #062d5d;
+      font-weight: bold;
+      transition: background-color ease 350ms, color ease 350ms;
+    }
+    
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .dropdown-item:hover {
+      background-color: #062d5d;
+      color: #fbb802 !important;
+      cursor: pointer;
+    }
+    
+    .navbar-nav a.active > .nav-link,
+    .navbar-nav a.active > .dropdown-item {
+      color: #fbb802 !important;
+      background-color: #062d5d;
+    }
+    
+    .navbar-nav .nav-link.active {
+      background-color: #062d5d;
+      color: #fbb802 !important;
+    }
+    
+    .navbar-nav .dropdown-menu {
+      position: absolute;
+      top: 160%;
+      left: 0;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      float: left;
+      min-width: 10rem;
+      padding: 0.5rem 0;
+      margin: 0.125rem 0 0;
+      font-size: 1rem;
+      color: #212529;
+      text-align: left;
+      list-style: none;
+      background-color: rgba(255, 255, 255, 0.856);
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 0.25rem;
+      transition: top ease 400ms;
+    }
+    
+    .navbar-nav .dropdown-menu.show {
+      opacity: 1;
+      visibility: visible;
+      top: 100%;
+      transition: top ease 400ms;
+    }
+    
+    @media (max-width: 575px) {
+      .texto-brand {
+        display: none;
+      }
+    
+      .abc-logo {
+        width: 60px;
+      }
+    }
+    
+    @media (min-width: 992px) {
+      .navbar-nav {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    
+        & .nav-link {
+          margin-left: 10px;
+        }
+      }
+    }
+    
+    @media (max-width: 991px) {
+    
+      .navbar-nav .dropdown-menu {
+        display: none;
+        left: 130px;
+      }
+    
+      .navbar-nav .nav-link {
+        margin-bottom: 5px;
+      }
+    
+      .navbar-nav .dropdown-menu.show {
+          display: block;
+      }
+    }
+  }

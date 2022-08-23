@@ -1,0 +1,27 @@
+/**#########################################*/
+/**#######   ESTILOS SECCION EQUIPO   ######*/
+/**#########################################*/
+#equipo {
+
+	.card {
+		padding-bottom: 10px;
+
+		.card-body {
+			padding: 5px 10px;
+			margin: 0;
+
+			.card-title {color: #96110c;}
+
+			.card-text {color: #062d5d;}
+		}
+
+	}
+
+	@media (max-width: 575px) {
+		& {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
+}
+  

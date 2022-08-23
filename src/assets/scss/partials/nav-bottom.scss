@@ -1,0 +1,37 @@
+/**#########################################*/
+/**########   ESTILOS MENU BOTTOM   ########*/
+/**#########################################*/
+
+.nav-eq {
+    position: sticky;
+    bottom: 0px;
+    z-index: 1;
+    box-shadow: 0px 0px 8px 3px #11101021;
+    transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  
+    a {
+      margin-right: 5px;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 8px 20px !important;
+      color: #062d5d;
+      font-weight: bold;
+      transition: background-color ease 350ms, color ease 350ms;
+    }
+    
+    .navbar-nav .nav-link:hover {
+      background-color: #062d5d;
+      color: #fbb802 !important;
+      cursor: pointer;
+    }
+  
+    .navbar-nav a.active > .nav-link {
+      color: #fbb802 !important;
+      background-color: #062d5d;
+    }
+  }
+  
+  .nav-eq.subir {
+    bottom: 38px;
+  }

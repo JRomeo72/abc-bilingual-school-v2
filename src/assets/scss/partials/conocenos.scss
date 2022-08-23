@@ -1,0 +1,60 @@
+/**#########################################*/
+/**#####   ESTILOS SECCION CONOCENOS   #####*/
+/**#########################################*/
+.about-us-section .icono {
+    width: 60px;
+    height: 60px;
+    color: #fbb802;
+    font-size: 30px;
+  }
+  .about-us-section ul {
+    padding: 0;
+  }
+  .about-us-section ul li {
+    display: block;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .about-us-section ul li span {
+    display: table-cell;
+  }
+  .about-us-section ul li i {
+    font-size: 20px;
+    font-weight: 500;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #96110c;
+    color: #fbb802;
+    text-align: center;
+    padding-top: 5px;
+    margin-right: 10px;
+  }
+
+  .about-us-section #valores {
+    padding: 10px 30px;
+    border-radius: 10px;
+
+    h5 {
+      color: #fbb802;
+    }
+
+    .elements {
+      padding-left: 40px;
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+          color: white;
+          margin-right: 25px;
+          font-weight: 400;
+        }
+
+      }
+    }
+
+  }
+
+

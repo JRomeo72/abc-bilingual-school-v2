@@ -1,0 +1,147 @@
+/**#########################################*/
+/**#########   ESTILOS CARRUSEL   ##########*/
+/**#########################################*/
+
+.carousel-inner {
+  position: relative;
+  --aspect-ratio: 25/8;
+  height: 0;
+  padding-bottom: calc(100%/(var(--aspect-ratio)));
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+  }
+  
+  .mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+  }
+  
+  .texto-carrusel {
+    position: relative;
+    margin: auto;
+    padding: 30px;
+    transform: translateY(-120%);
+    text-align: center;
+    color: cornsilk;
+  }
+  
+  .texto-carrusel-3 {
+    position: absolute;
+    // margin: auto;
+    // margin: 0;
+    padding: 30px;
+    // transform: translateY(-290%);
+    top: 0;
+    margin-left: 0;
+    color: cornsilk;
+  }
+  
+  .texto-carrusel .display-3,
+  .texto-carrusel-3 .display-3 {
+    font-size: 300%;
+    font-weight: bolder;
+    letter-spacing: 2px !important;
+    font-family: "Coolvetica", sans-serif;
+  }
+  
+  .texto-carrusel .h3,
+  .texto-carrusel-3 .h3 {
+    color: white;
+    font-size: 25px;
+  }
+  
+  @media (max-width: 991px) {
+
+    .carousel-inner {
+      --aspect-ratio: 21/11;
+    }
+
+
+    .texto-carrusel .display-3,
+    .texto-carrusel-3 .display-3 {
+        font-size: 250%;
+      }
+  
+    .texto-carrusel .h3,
+    .texto-carrusel-3 .h3 {
+        font-size: 20px;
+      }
+  
+    // .texto-carrusel-3 {
+    //   transform: translateY(-320%);
+    // }
+  }
+  
+  @media (max-width: 767px) {
+
+    .carousel-inner {
+      --aspect-ratio: 21/15;
+    }
+
+    .texto-carrusel .display-3,
+    .texto-carrusel-3 .display-3 {
+        font-size: 200%;
+      }
+  
+    .texto-carrusel .h3,
+    .texto-carrusel-3 .h3 {
+        font-size: 15px;
+      }
+  
+    // .texto-carrusel-3 {
+    //   transform: translateY(-350%);
+    // }
+  }
+  
+  @media (max-width: 575px) {
+
+    .texto-carrusel .display-3,
+    .texto-carrusel-3 .display-3 {
+        font-size: 180%;
+      }
+  
+    .texto-carrusel .h3,
+    .texto-carrusel-3 .h3 {
+        font-size: 14px;
+      }
+  
+    // .texto-carrusel-3 {
+    //   transform: translateY(-120%);
+    //   text-align: center;
+    // }
+  }
+  
+  @media (max-width: 342px) {
+
+    .texto-carrusel .display-3,
+    .texto-carrusel-3 .display-3 {
+        font-size: 140%;
+      }
+  
+    .texto-carrusel .h3,
+    .texto-carrusel-3 .h3 {
+        font-size: 12px;
+      }
+  
+    // .texto-carrusel-3 {
+    //   transform: translateY(-300%);
+    // }
+  }

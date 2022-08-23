@@ -1,0 +1,91 @@
+/**###################################################*/
+/**###########   ESTILOS PERSONALIZADOS   ############*/
+/**###################################################*/
+
+body {box-sizing: border-box;}
+
+a {text-decoration: none !important;}
+
+.animalo {opacity: 0;}
+
+/**#########################################*/
+/**###########   COLORES BASE   ############*/
+/**#########################################*/
+.bg-azul {background-color: #062d5d;}
+
+.color-azul {color: #062d5d;}
+
+.bg-naranja {background-color: #fbb802;}
+
+.color-naranja {color: #fbb802;}
+
+.bg-rojo {background-color: #96110c;}
+
+.color-rojo {color: #96110c;}
+
+.bg-claro {background-color: #eeeeee;}
+
+.color-claro {color: #eeeeee;}
+
+.bg-naranja-op {background-color: #fbb802c0;}
+
+.bg-blanco {background-color: white;}
+
+.sombra {box-shadow: 2px 2px 5px 3px #00000052;}
+
+.sombra-l {box-shadow: 4px 4px 8px 5px #00000052;}
+
+.sombra-c {box-shadow: 2px 2px 10px -2px #00000052;}
+
+/**#########################################*/
+/**############   TIPOGRAFIA   #############*/
+/**#########################################*/
+@font-face {
+  font-family: Coolvetica;
+  src: url(../font/coolvetica/coolvetica_rg.ttf) format("truetype");
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2 {
+  font-family: "Coolvetica", sans-serif !important;
+  letter-spacing: 1px;
+}
+
+.h1 {font-size: 50px;}
+
+.h2 {font-size: 40px;}
+
+.parrafo {font-size: 20px;}
+
+.titulo-seccion {
+  padding: 30px 0 15px 0;
+  color: #96110c;
+}
+.titulo-seccion span {
+  color: #96110c;
+}
+
+.my-section {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sub-titulo-seccion {
+  color: #fbb802;
+}
+
+.parrafo-seccion {
+  color: #fbb802;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/**#########################################*/
+/**########   FORMATO DE ICONOS    #########*/
+/**#########################################*/
+.icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}

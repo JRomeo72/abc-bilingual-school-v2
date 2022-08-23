@@ -1,0 +1,34 @@
+/**#########################################*/
+/**########   ESTILOS BARRA INFO   #########*/
+/**#########################################*/
+.barra-top-info {
+    position: relative;
+    z-index: 4;
+    padding: 0;
+  }
+  
+  .barra-top-info-items {
+    max-width: 1500px;
+  }
+  .barra-top-info-items .icono {
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media (max-width: 1052px) {
+    .barra-top-info span {
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 864px) {
+    .barra-top-info .icono {
+      font-size: 12px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+  @media (max-width: 840px) {
+    .barra-top-info {
+      display: none;
+    }
+  }

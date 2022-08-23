@@ -1,0 +1,404 @@
+@import './partials/global.scss';
+@import './partials/modals.scss';
+@import './partials/barra-info.scss';
+@import './partials/navbar.scss';
+@import './partials/nav-bottom.scss';
+@import './partials/button-float.scss';
+@import './partials/carrusel.scss';
+@import './partials/info.scss';
+@import './partials/conocenos.scss';
+@import './partials/parallax.scss';
+@import './partials/equipos.scss';
+@import './partials/testimo.scss';
+@import './partials/404.scss';
+
+
+/**#########################################*/
+/**######### ESTILOS SECCION FOTOS  ########*/
+/**#########################################*/
+.seccion-fotos, .fotos-item, img {
+  padding: 0;
+  margin: 0;
+}
+
+.seccion-fotos .fotos-item img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/**#########################################*/
+/**########### ESTILOS DEL FOOTER  #########*/
+/**#########################################*/
+.seccion-footer {
+  font-size: 14px;
+  background: #062d5d;
+  padding: 6em 0;
+  color: #fbb802;
+}
+.seccion-footer .container {
+  max-width: 1200px;
+  padding-right: 50px;
+  padding-left: 50px;
+  /* BLOCK 1 */
+  /* BLOCK 2 */
+  /* BLOCK 3 */
+  /* BLOCK 4 */
+}
+.seccion-footer .container ul {
+  padding: 0;
+}
+.seccion-footer .container .block-title {
+  margin-bottom: 20px;
+  font-size: 25PX;
+}
+.seccion-footer .container .block-1 span {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.514);
+}
+.seccion-footer .container .block-1 li {
+  display: table;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+.seccion-footer .container .block-1 li .icon {
+  display: table-cell;
+  width: 25px;
+  color: #fbb802;
+}
+.seccion-footer .container .block-2 img {
+  width: 50px;
+  margin-right: 15px;
+}
+.seccion-footer .container .block-2 a {
+  color: white;
+  font-weight: 400;
+}
+.seccion-footer .container .block-2 a:hover {
+  color: #fbb802;
+}
+.seccion-footer .container .block-2 .meta > div {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5px;
+}
+.seccion-footer .container .block-2 .meta > div .icon {
+  margin-right: 3px;
+  color: #fbb802;
+}
+.seccion-footer .container .block-2 .meta > div a {
+  margin-right: 3px;
+  color: rgba(255, 255, 255, 0.514);
+}
+.seccion-footer .container .block-3 .menu li {
+  display: table;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: white;
+}
+.seccion-footer .container .block-3 .menu li a {
+  color: white;
+}
+.seccion-footer .container .block-3 .menu li a:hover {
+  color: #fbb802;
+  font-weight: 600;
+}
+.seccion-footer .container .block-3 .footer-social li {
+  display: inline-block;
+  /*margin-left: 10px;*/
+  margin-right: 10px;
+}
+.seccion-footer .container .block-3 .footer-social li span {
+  font-size: 20px;
+  color: #fbb802;
+  background-color: rgba(255, 255, 255, 0.11);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+.seccion-footer .container .block-3 .footer-social li span:hover {
+  color: white;
+  background-color: #fbb802;
+}
+.seccion-footer .container .block-4 .text {
+  color: gray;
+}
+.seccion-footer .container .block-4 #contact-form #subject {
+  display: none;
+}
+.seccion-footer .container .block-4 #contact-form textarea {
+  display: none;
+}
+.seccion-footer .container .block-4 .btn:hover {
+  background-color: #fbb802;
+}
+.seccion-footer .container .block-4 .small-form-back {
+  background-position: center;
+}
+.seccion-footer .container .text-copyright {
+  color: gray;
+  font-size: 12px;
+}
+
+/**#########################################*/
+/**#########   ESTILOS V. ESCOLAR   ########*/
+/**#########################################*/
+#vida-escolar .container-fluid {
+  max-width: 1200px;
+}
+#vida-escolar .container-fluid .card {
+  margin-bottom: 100px !important;
+}
+#vida-escolar .container-fluid .card .card-body {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}
+#vida-escolar .container-fluid .tarjeta-1 .card-body {
+  background-color: #062d5d;
+  color: #fbb802;
+}
+#vida-escolar .container-fluid .tarjeta-2 .card-body {
+  background-color: #96110c;
+  color: #eeeeee;
+}
+#vida-escolar .container-fluid .tarjeta-3 .card-body {
+  background-color: #fbb802;
+  color: #062d5d;
+}
+#vida-escolar .container-fluid .carousel-item .carousel-caption {
+  transform: translateY(-500px);
+  background-color: #062d5d;
+  color: #fbb802;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+/*.container.instagram-feed {
+  position: relative;
+}
+
+.container.instagram-feed .wall {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  z-index: 100000;
+}*/
+
+@media (max-width: 600px) {
+  #vida-escolar .card .card-body .card-title {
+    font-size: 25px;
+  }
+}
+@media (max-width: 600px) {
+  #vida-escolar .card .card-body h5 {
+    font-size: 15px;
+  }
+}
+/**#########################################*/
+/**######### ESTILOS DE CONTACTANOS  #######*/
+/**#########################################*/
+#contactanos {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#contactanos .item i {
+  font-size: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#contactanos .social-icons ul li {
+  display: inline-block;
+  /*margin-left: 10px;*/
+  margin-right: 10px;
+}
+#contactanos .social-icons ul li a span {
+  font-size: 20px;
+  color: #fbb802;
+  background-color: rgba(255, 255, 255, 0.11);
+  /*background: rgba(255, 255, 255, 0.05);*/
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
+#contactanos .social-icons ul li a span:hover {
+  color: white;
+  background-color: #fbb802;
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  #contactanos ._email {
+    font-size: 15px;
+  }
+}
+.mapa-y-form .container-fluid {
+  max-width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.mapa-y-form .container-fluid .map-back,
+.mapa-y-form .container-fluid .form-back {
+  background-position: center;
+}
+
+/**#########################################*/
+/**############ ESTILOS OFFLINE  ###########*/
+/**#########################################*/
+#contentMessage {
+  position: fixed;
+  bottom: -7px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 600ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#contentMessage.true {
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+  color: #155724;
+  background-color: #d4edda;
+}
+
+#contentMessage.false {
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+  color: #721c24;
+  background-color: #f8d7da;
+}
+
+.visible {
+  visibility: visible;
+  /*opacity: 1;
+  height: 100%;
+  transition: all 2000ms cubic-bezier(0.23, 1, 0.32, 1);*/
+}
+
+.oculto {
+  visibility: hidden;
+  /*opacity: 0;
+  height: 0;*/
+}
+
+.v-ocultar {
+  display: none !important;
+}
+
+/**##########   MIS ANIMACIONES   ##########*/
+
+.animated.delay-500ms {
+  -webkit-animation-delay:0.5s;
+  animation-delay:0.5s
+}
+
+.animated.retardo-1 {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+}
+
+.animated.retardo-2 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.animated.retardo-3 {
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+.animated.retardo-4 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.animated.retardo-5 {
+  -webkit-animation-delay: 1.25s;
+  animation-delay: 1.25s;
+}
+
+.animated.retardo-6 {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.animated.retardo-7 {
+  -webkit-animation-delay: 1.75s;
+  animation-delay: 1.75s;
+}
+
+.animated.retardo-8 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+
+
+/**#########################################*/
+/**########## MODALES CIRCULARES  ##########*/
+/**#########################################*/
+
+.img__logo__circulares {
+  width: 100px;
+}
+
+/**#########################################*/
+/**######### PARTE DE BOOTSTRAP 4  #########*/
+/**###########  INSERTAR VIDEOS  ###########*/
+/**#########################################*/
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-21by9::before {
+  padding-top: 42.857143%;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 75%;
+}
+
+.embed-responsive-1by1::before {
+  padding-top: 100%;
+}
+
+/**# sourceMappingURL=style.css.map */

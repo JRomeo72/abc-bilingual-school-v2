@@ -1,0 +1,29 @@
+/**#########################################*/
+/**####   ESTILOS SECCION INFORMACION   ####*/
+/**#########################################*/
+.services-section {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .services-section a {
+    color: #000000;
+  }
+  
+  .services-section a.link-1:hover,
+  .services-section a.link-4:hover {
+    color: #96110c;
+  }
+  
+  .services-section a.link-2:hover,
+  .services-section a.link-3:hover {
+    color: #fbb802;
+  }
+  
+  .services-section .icono {
+    width: 120px;
+    height: 120px;
+    font-size: 60px;
+    border-radius: 60px;
+    transform: translateY(-40px);
+  }

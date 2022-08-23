@@ -1,0 +1,54 @@
+/**#########################################*/
+/**##### ESTILOS SECCION TESTIMONISLES  ####*/
+/**#########################################*/
+
+#testimoniales {
+    height: fit-content; //550
+    transition: height ease 350ms;
+
+    .carousel-item {
+        height: fit-content; //380
+        padding-top: 10px;
+
+        .img-box {
+            width: 120px;
+            height: 120px;
+
+            .img-svg {
+                mask-image: url(/assets/img/svg/mujer-user.svg);
+                -webkit-mask-image: url(/assets/img/svg/mujer-user.svg);
+                background-color: #062d5d;
+                width: 100px;
+                height: 100px;
+            }
+
+        }
+
+        .caption {
+            max-width: 900px;
+            width: 90%;
+
+            h5 {
+                color: #96110c;
+                font-weight: 500;
+            }
+            p {
+                color: #062d5d;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .carousel-control-prev-icon {transform: translateX(-30px);}
+    .carousel-control-next-icon {
+        transform: translateX(30px);
+    }
+    
+    .carousel-indicators {transform: translateY(50px);}
+}

@@ -1,0 +1,114 @@
+/**#########################################*/
+/**############ ESTILOS MODALS  ###########*/
+/**#########################################*/
+.modal-dialog.modal-notify.modal-azul .modal-header,
+.modal .modal-footer .btn-azul {
+    background-color: #062d5d;
+}
+
+/**#########################################*/
+/**######### MODAL MENU CAFETERIA  #########*/
+/**#########################################*/
+#menuModal {
+   
+    .modal-dialog {max-width: 1300px;}
+    
+    .btn-close {
+        color: #fff;
+        background: transparent url("/assets/img/svg/x.svg") center/1em auto no-repeat !important;
+    }
+  
+    .btn-close:hover {border: 2px solid white;}
+
+    .img-menu-logo {width: 150px;}
+    
+    .menu-titulo {
+        background-color: #5A070F;
+        width: 100%;
+        max-width: 350px;
+        padding-bottom: 5px;
+        font-size: 3rem;
+        color: white;
+        margin: auto;
+
+        &__fecha {
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+    }
+    
+
+    .menu-item {
+        padding-bottom: 20px;
+
+        &__contenedor {
+            width: 200px;
+            height: 150px;
+        }
+        
+        &__dia {
+            background-color: #F59A3C;
+            width: 150px;
+            height: 35px;
+            padding-top: 2px;
+            font-size: 20px;
+            font-weight: 900;
+            color: #040D31;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        &__plato {
+            background-color: #17172B;
+            height: 130px;
+            font-size: 18px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            transform: translateY(-10px);
+        }
+
+    }
+    
+    .precios {
+        
+        .row {
+            width: 100%;
+            max-width: 800px;
+
+            .col .precio {
+                width: 250px;
+                padding: 5px 15px;
+                border: 2px solid black;
+                margin-bottom: 10px;
+
+                span {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+        
+    }
+    
+    @media (max-width: 414px) {
+        .menu-titulo {font-size: 2rem;}
+    }
+}
+
+/**#########################################*/
+/**########### ESTILOS infoModal  ##########*/
+/**#########################################*/
+#infoModal .modal-body img {
+    width: 100px;
+    height: 100px;
+}
+#infoModal .modal-body p {
+    font-weight: 500;
+}
