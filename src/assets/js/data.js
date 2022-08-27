@@ -49,7 +49,7 @@ export let equipos = {
             {"nombre":"Ms. Maira Gutiérrez", "cargo":"PREMATERNAL","position":"NURSERY","link":"/assets/img/equipo/parvularia/01_Maira_Gutierrez.jpg"},
             {"nombre":"Ms. Michelle Ayala", "cargo":"MATERNAL","position":"EARLY CHILDHOOD","link":"/assets/img/equipo/parvularia/02_Michelle_Ayala.jpg"},
             {"nombre":"Ms. Adriana Somoza", "cargo":"PRE KINDER A","position":"PREKINDER A","link":"/assets/img/equipo/parvularia/03_Adriana_Somoza.jpg"},
-            {"nombre":"Ms. Eugenia Gonzalez", "cargo":"PRE KINDER B","position":"PREKINDER B","link":"/assets/img/equipo/parvularia/04_Eugenia_Gonzalez.jpg"},
+            {"nombre":"Ms. Eugenia González", "cargo":"PRE KINDER B","position":"PREKINDER B","link":"/assets/img/equipo/parvularia/04_Eugenia_Gonzalez.jpg"},
             {"nombre":"Ms. Paola Aguilar", "cargo":"KINDER A","position":"KINDER A","link":"/assets/img/equipo/parvularia/05_Paola_Aguilar.jpg"},
             {"nombre":"Ms. Adriana Avelar", "cargo":"KINDER B","position":"KINDER B","link":"/assets/img/equipo/parvularia/06_Adriana_Avelar.jpg"},
             {"nombre":"Mrs. Erika Salinas", "cargo":"PREPARATORIA A","position":"PREPARATORY A","link":"/assets/img/equipo/parvularia/07_Erika_Salinas.jpg"},
@@ -57,7 +57,8 @@ export let equipos = {
             {"nombre":"Ms. Gabriela Araujo", "cargo":"ASISTENTE DE KINDER A","position":"KINDER A ASSISTANT","link":"/assets/img/equipo/parvularia/09_Gabriela_Araujo.jpg"},
             {"nombre":"Ms. Fátima Rivera", "cargo":"ASISTENTE DE KINDER B","position":"KINDER B ASSISTANT","link":"/assets/img/equipo/parvularia/10_Fatima_Rivera.jpg"},
             {"nombre":"Ms. Paola López", "cargo":"ASISTENTE DE PREPARATORIA A","position":"PREPARATORY A ASSISTANT","link":"/assets/img/equipo/parvularia/11_Paola_Lopez.jpg"},
-            {"nombre":"Ms. Camila Escolán", "cargo":"ASISTENTE DE PREPARATORIA B","position":"PREPARATORY B ASSISTANT","link":"/assets/img/equipo/parvularia/12_Camila_Escolan.jpg"}
+            {"nombre":"Ms. Camila Escolán", "cargo":"ASISTENTE DE PREPARATORIA B","position":"PREPARATORY B ASSISTANT","link":"/assets/img/equipo/parvularia/12_Camila_Escolan.jpg"},
+            {"nombre":"Mr. Miguel Salazar", "cargo":"DEPORTE","position":"PHYSICAL EDUCATION","link":"/assets/img/equipo/parvularia/13_Miguel_Salazar.jpg"}
         ]
     },
     prima: {
@@ -73,7 +74,7 @@ export let equipos = {
             {"nombre":"Ms. Sally Ventura", "cargo":"5º GRADO","position":"5th GRADE","link":"/assets/img/equipo/primaria/08_Sally_Ventura.jpg"},
             {"nombre":"Mr. Carlos Revolorio", "cargo":"MÚSICA","position":"MUSIC","link":"/assets/img/equipo/primaria/09_Carlos_Revolorio.jpg"},
             {"nombre":"Mrs. Marielos de Walsh", "cargo":"ARTE","position":"ART","link":"/assets/img/equipo/primaria/10_Marielos_de_Walsh.jpg"},
-            {"nombre":"Mr. Miguel Salazar", "cargo":"DEPORTE","position":"PHYSICAL EDUCATION","link":"/assets/img/equipo/parvularia/13_Miguel_Salazar.jpg"}
+            {"nombre":"Mr. Eduardo Solórzano", "cargo":"DEPORTE","position":"PHYSICAL EDUCATION","link":"/assets/img/equipo/primaria/11_Eduardo_Solorzano.jpg"}
         ]
     },
     secun: {
@@ -89,7 +90,7 @@ export let equipos = {
             {"nombre":"Ms. Luz Cáceres", "cargo":"MAESTRA DE FRANCES","position":"FRENCH TEACHER","link":"/assets/img/equipo/secundaria/08_Luz_Caceres.jpg"},
             {"nombre":"Mr. Eduardo Santos", "cargo":"MAESTRO DE FRANCES","position":"FRENCH TEACHER","link":"/assets/img/equipo/secundaria/09_Eduardo_Santos.jpg"},
             {"nombre":"Mrs. Marielos de Walsh", "cargo":"ARTE","position":"ART","link":"/assets/img/equipo/secundaria/10_Marielos_de_Walsh.jpg"},
-            {"nombre":"Mr. Eduardo Solórzano", "cargo":"DEPORTE","position":"PHYSICAL EDUCATION","link":"/assets/img/equipo/secundaria/11_Eduardo_Solorzano.jpg"}
+            {"nombre":"Mr. Eduardo Solórzano", "cargo":"DEPORTE","position":"PHYSICAL EDUCATION","link":"/assets/img/equipo/primaria/11_Eduardo_Solorzano.jpg"}
         ]
     },
     nivel: {

@@ -21,6 +21,13 @@
 
 		jQuery(document).ready(function(){
 
+			// let loader = jQuery('.container_spinner');
+
+			// setTimeout(() => {
+			// 	loader.addClass('fade-out-animation');
+			// }, 5000)
+
+
 			// ESTE CODIGO HACE QUE EL MENU APARESCA Y SE VALLA
 			var flag = false;
 			var scroll;
