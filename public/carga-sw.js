@@ -7,14 +7,15 @@ if ('serviceWorker' in navigator) {
 
 				console.log('Registro de SW exitoso', reg);
 
+				setInterval(() => {
+					reg.update();
+					console.log('Comprobando 1mn')
+				}, 60000);
+
 				setTimeout(() => {
 					reg.update();
-				}, 5000);
-
-				setInterval(() => {
-					reg.update()
-					console.log('Comprobando')
-				}, 300000);
+					console.log('Comprobando 10sg')
+				}, 10000);
 
 				if(navigator.serviceWorker.controller) {
 
