@@ -98,20 +98,20 @@
 								 </div>
 							 </a>
 						 </li>
-						 <li>
+						 <!-- <li>
 							 <a target="_blank" rel="noopener" href="{$menuLinks[9]}">
 								 <div class="dropdown-item">
-									 {$menuItems[9]} <!-- *! Jornalizacion 1 --> 
+									 {$menuItems[9]}  *! Jornalizacion 1
 								 </div>
 							 </a>
 						 </li>
 						 <li>
 							 <a target="_blank" rel="noopener" href="{$menuLinks[10]}">
 								 <div class="dropdown-item">
-									 {$menuItems[10]} <!-- *! Jornalizacion 2 --> 
+									 {$menuItems[10]}  *! Jornalizacion 2
 								 </div>
 							 </a>
-						 </li>
+						 </li> -->
 					{/if}
 				</ul>
 			</li>

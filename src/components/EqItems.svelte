@@ -1,6 +1,6 @@
 <script>
     import { onMount } from 'svelte';
-    import { equipos } from '../assets/js/scripts';
+    import { equipos } from '../assets/js/data';
     import { conectionOnLine } from '../stores/stores';
     import MessageOffLine from './MessageOffLine.svelte';
     export let esp, eq;

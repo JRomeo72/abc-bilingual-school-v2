@@ -1,5 +1,5 @@
 <script>
-    import { cafeteria } from '../assets/js/scripts';
+    import { cafeteria } from '../assets/js/data';
     export let esp;
 </script>
 

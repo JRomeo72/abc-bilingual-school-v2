@@ -26,10 +26,10 @@
 
         <div id="info" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 d-flex justify-content-center">
 
+            <Circular url="/assets/img/circulares/circular-03.png" img="true"/>
+            <Circular url="/assets/img/circulares/circular-02.png" img="true"/>
             <Circular url="/assets/img/circulares/circular-01.jpg" doc="/assets/img/circulares/circular-01.pdf"/>
-            <!-- <Circular url="/assets/img/circulares/circular-04.jpg" img="true"/>
-            <Circular url="/assets/img/circulares/circular-03.jpg" img="true"/>
-            <Circular url="/assets/img/circulares/circular-02.jpg" img="true"/>
+            <!-- <Circular url="/assets/img/circulares/circular-02.jpg" img="true"/>
             <Circular url="/assets/img/circulares/circular-01.jpg" doc="/assets/img/circulares/circular-01.pdf"/> -->
 
         </div>

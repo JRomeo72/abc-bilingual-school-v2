@@ -1,16 +1,20 @@
-if ('serviceWorker' in navigator)
-{
+if ('serviceWorker' in navigator) {
+	
 	window.addEventListener('load', function(){
 
 		navigator.serviceWorker.register('/sw.js')
 			.then(reg =>{
 
-				console.log('Registro de SW exitoso', reg)
+				console.log('Registro de SW exitoso', reg);
+
+				setTimeout(() => {
+					reg.update();
+				}, 5000);
 
 				setInterval(() => {
 					reg.update()
 					console.log('Comprobando')
-				}, 10000);
+				}, 300000);
 
 				if(navigator.serviceWorker.controller) {
 

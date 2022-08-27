@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.08.23';
+const CACHE_NAME = 'ABC_v22.08.26';
 urlsToCache = [
     // ? Views ***************************
     '/',
@@ -49,8 +49,8 @@ urlsToCache = [
     '/assets/img/circulares/circular-01.pdf',
     // '/assets/img/circulares/circular-01.jpg',
     // '/assets/img/circulares/circular-01.pdf',
-    // '/assets/img/circulares/circular-02.jpg',
-    // '/assets/img/circulares/circular-03.jpg',
+    '/assets/img/circulares/circular-02.png',
+    '/assets/img/circulares/circular-03.png',
     // '/assets/img/circulares/circular-04.jpg',
     // ? Fechas Imp. ********************* 
     '/assets/img/eventos/fechas.jpg',

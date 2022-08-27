@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import { Router, Route } from 'svelte-routing';
 	// import { checkConnection } from './views/Common.svelte';
+	// import Spinner from './components/Spinner.svelte';
 	import Header from './components/Header.svelte';
 	import Inicio from './views/Inicio.svelte';
 	import Institucion from './views/Institucion.svelte';
@@ -74,7 +75,7 @@
 
 </script>
 
-
+<!-- <Spinner /> -->
 <Router url="{url}">
 	<Header />
 	

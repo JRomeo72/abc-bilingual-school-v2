@@ -1,18 +1,8 @@
 <script>
     import { onMount } from 'svelte';
     import { menuItems, menuLinks, menuDrop, conectionOnLine } from '../stores/stores';
-
-    import {
-                contentWayPointAnimalo,
-                navItemsEs,
-                navItemsEn,
-                navLinksEs,
-                navLinksEn,
-                navDropEs,
-                navDropEn,
-                menuRemoveClass,
-                goScrollUp
-            } from '../assets/js/scripts';
+    import { contentWayPointAnimalo, menuRemoveClass, goScrollUp } from '../assets/js/scripts';
+    import { navItemsEs, navItemsEn, navLinksEs, navLinksEn, navDropEs, navDropEn, } from '../assets/js/data';
     import Language from '../components/Language.svelte'
 
     export let esp, clase, url=[];
@@ -143,6 +133,5 @@
     } );
 
 </script>
-
 
 <Language {esp} {page} />

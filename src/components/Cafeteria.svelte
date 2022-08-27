@@ -1,5 +1,5 @@
 <script>
-    import { cafeteria } from '../assets/js/scripts';
+    import { cafeteria } from '../assets/js/data';
 </script>
 
 <div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

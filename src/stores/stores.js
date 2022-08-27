@@ -1,5 +1,5 @@
 import { writable } from "svelte/store";
-import { navItemsEs, navLinksEs, navDropEs } from "../assets/js/scripts";
+import { navItemsEs, navLinksEs, navDropEs } from "../assets/js/data";
 
 export const menuItems = writable( navItemsEs );
 export const menuLinks = writable( navLinksEs );
