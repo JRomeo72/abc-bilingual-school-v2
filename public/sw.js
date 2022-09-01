@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.08.26-7';
+const CACHE_NAME = 'ABC_v22.09.01-3';
 urlsToCache = [
     // ? Views ***************************
     '/',
@@ -25,7 +25,9 @@ urlsToCache = [
     // ? Javascript + css **************** 
     '/App.js',
     '/assets/js/bundle.js',        
-    '/assets/js/bundle.css',        
+    '/assets/js/bundle.css',
+    '/manifest.json',
+    '/carga-sw.js',
 
     // ? Documentos ********************** 
     // '/assets/documents/Manual-de-convivencia-2021-2022.pdf',
@@ -54,16 +56,14 @@ urlsToCache = [
     // '/assets/img/circulares/circular-04.jpg',
     // ? Fechas Imp. ********************* 
     '/assets/img/eventos/fechas.jpg',
-    '/assets/img/eventos/agosto-01.jpg',
-    '/assets/img/eventos/agosto-02.jpg',
-    '/assets/img/eventos/agosto-03.jpg',
-    '/assets/img/eventos/agosto-04.jpg',
-    '/assets/img/eventos/agosto-05.jpg',
-    '/assets/img/eventos/agosto-06.jpg',
-    '/assets/img/eventos/agosto-07.jpg',
-    '/assets/img/eventos/agosto-08.jpg',
-    '/assets/img/eventos/agosto-09.jpg',
-    '/assets/img/eventos/agosto-10.jpg',
+    '/assets/img/eventos/sept-01.jpg',
+    '/assets/img/eventos/sept-02.jpg',
+    '/assets/img/eventos/sept-03.jpg',
+    '/assets/img/eventos/sept-04.jpg',
+    '/assets/img/eventos/sept-05.jpg',
+    '/assets/img/eventos/sept-06.jpg',
+    '/assets/img/eventos/sept-07.jpg',
+    '/assets/img/eventos/sept-08.jpg',
     // ? Imagenes Galeria **************** 
     '/assets/img/fotos/foto-01.jpg',
     '/assets/img/fotos/foto-02.jpg',
@@ -85,6 +85,7 @@ urlsToCache = [
     '/assets/img/logos/abc-logo.jpg',
     '/assets/img/logos/Logo_McGraw-Hill.jpg',
     '/assets/img/logos/Logo_alianza-francesa.png',
+    '/assets/img/logos/Logo_HMH.png',
     '/assets/img/logos/Logo_Pearson.png',
     '/assets/img/logos/Logo_Santillana.png',
     '/assets/img/logos/Logo_t-box.png',

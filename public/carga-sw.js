@@ -7,20 +7,21 @@ if ('serviceWorker' in navigator) {
 
 				console.log('Registro de SW exitoso', reg);
 
-				reg.update();
-
 				setInterval(() => {
 					reg.update();
-					console.log('Comprobando 1mn')
-				}, 60000);
+					console.log('Comprobando 10sg')
+				}, 10000);
 
 				if(navigator.serviceWorker.controller) {
 
 					reg.addEventListener('updatefound', () => {
 						const installingWorker = reg.installing;
 						console.log('A new service worker is being installed:', installingWorker)
-						alert('Hay una version nueva de esta Web App, el navegador se reiniciara para efectuar los cambios');
-						location.reload();
+	
+						setTimeout(() => {
+							alert('Hay una version nueva de esta Web App, reinicia el navegador para efectuar los cambios');
+							// location.reload();
+						}, 10000);
 					});
 				}
 			})

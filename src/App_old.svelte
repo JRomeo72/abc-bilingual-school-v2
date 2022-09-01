@@ -19,30 +19,37 @@
 
 	onMount( () => {
 
-		// jQuery(document).ready(function(){
+		jQuery(document).ready(function(){
+
+			// let loader = jQuery('.container_spinner');
+
+			// setTimeout(() => {
+			// 	loader.addClass('fade-out-animation');
+			// }, 5000)
+
 
 			// ESTE CODIGO HACE QUE EL MENU APARESCA Y SE VALLA
 			var flag = false;
 			var scroll;
-			var nav = document.querySelector("#navbar-fixed");
+			var nav = jQuery("#navbar-fixed")
 
-			window.onscroll = function(){
-				var scroll = document.documentElement.scrollTop;
+			jQuery(window).scroll(function(){
+				var scroll = jQuery(window).scrollTop();
 
 				if(scroll >1000){
 					if(!flag){
-						nav.classList.add('animated', 'fadeInDown');
+						nav.addClass('animated fadeInDown');
 						flag = true;
 					}
 
 				}
 				else{
 					if(flag){
-						nav.classList.remove('fadeInDown');
-						nav.classList.add('fadeOutUp');
+						nav.removeClass('fadeInDown');
+						nav.addClass('fadeOutUp');
 						flag = false;
 						setTimeout( function () {
-							nav.classList.remove('animated', 'fadeOutUp');
+							nav.removeClass('animated fadeOutUp');
 
 						}, 200, 'easeInOutExpo' );
 					}
@@ -51,9 +58,9 @@
 
 				}
 
-			};
+			});
 
-		// });
+		});
 
 		let contentMessage = document.querySelector("#contentMessage");
 		let messages = {

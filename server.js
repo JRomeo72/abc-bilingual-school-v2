@@ -17,8 +17,8 @@ server.get("*", function(req, res) {
 		<html lang="es">
 			<head>
 				<meta charset="UTF-8">
-				<meta http-equiv="X-UA-Compatible" content="IE=edge">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<meta http-equiv="X-UA-Compatible" content="ie=edge">
+				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			
 				<meta name="description" content="Bienvenidos al sitio web de ABC Bilingual School El Salvador, aquí encontraras toda la información acerca de nuestra institución">
 			
@@ -63,6 +63,31 @@ server.get("*", function(req, res) {
 			
 				<script src="/carga-sw.js"></script>
 				<script src="/assets/js/bundle.js"></script>
+				// <script src="/assets/js/venobox-v192.js"></script>
+
+				// <script>
+
+				// 	window.addEventListener('load', () => {
+
+				// 		jQuery('.venobox').venobox({
+				// 			// selector: '.venobox',
+				// 			spinner    : 'cube-grid',
+				// 			spinColor    : '#fbb802',
+				// 			border: '5px',
+				// 			bgcolor: '#fbb802',
+				// 			arrowsColor: '#fbb802',
+				// 			closeColor : "#fbb802",
+				// 			infinigall: true,
+				// 			numeratio: true,
+				// 			numerationColor: '#fbb802',
+				// 			titleattr: 'title',
+				// 			titleColor: '#fbb802',
+				// 			// navTouch: true,
+				// 			// toolsColor: '#fbb802',
+				// 			// overlayClose: false
+				// 		});
+				// 	})
+				// </script>
 			
 			</body>
 		</html>

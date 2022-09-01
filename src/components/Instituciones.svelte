@@ -25,13 +25,19 @@
             </a>
         </div>
 
-        <div class="col-sm-6 d-flex justify-content-center align-items-center py-1 my-3 animalo" data-animate-effect="fadeIn">
+        <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center py-1 my-3 animalo" data-animate-effect="fadeIn">
             <a href="https://www.mheducation.com" target="_blank">
             <img src="/assets/img/logos/Logo_McGraw-Hill.jpg" alt="" style="height: 100px">
             </a>
         </div>
 
-        <div class="col-sm-6 d-flex justify-content-center align-items-center py-1 my-3 animalo" data-animate-effect="fadeIn">
+        <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-items-center py-1 my-3 animalo" data-animate-effect="fadeIn">
+            <a href="https://www.hmhco.com" target="_blank">
+            <img src="/assets/img/logos/Logo_HMH.png" alt="" style="height: 100px">
+            </a>
+        </div>
+
+        <div class="col-sm-12 col-lg-4 d-flex justify-content-center align-items-center py-1 my-3 animalo" data-animate-effect="fadeIn">
             <a href="https://www.afelsalvador.com" target="_blank">
             <img src="/assets/img/logos/Logo_alianza-francesa.png" alt="" style="height: 150px">
             </a>

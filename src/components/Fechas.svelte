@@ -8,11 +8,36 @@
     } )
 
     const miVenobox = () => {
+
+        // jQuery('.venobox').venobox({
+        //     // selector: '.venobox',
+        //     spinner    : 'cube-grid',
+        //     spinColor    : '#fbb802',
+        //     border: '5px',
+        //     bgcolor: '#fbb802',
+        //     arrowsColor: '#fbb802',
+        //     closeColor : "#fbb802",
+        //     infinigall: true,
+        //     numeratio: true,
+        //     numerationColor: '#fbb802',
+        //     titleattr: 'title',
+        //     titleColor: '#fbb802',
+        //     // navTouch: true,
+        //     // toolsColor: '#fbb802',
+        //     // overlayClose: false
+        // });
+
         new VenoBox({
+            selector: '.venobox',
             spinner    : 'grid',
+            spinColor    : '#fbb802',
+            border: '5px',
+            bgcolor: '#fbb802',
             infinigall: true,
             numeration: true,
-            spinColor    : '#fbb802',
+            titleattr: 'title',
+            navTouch: true,
+            toolsColor: '#fbb802',
         });
     }
 </script>
@@ -24,17 +49,15 @@
 
         <div id="info" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 d-flex justify-content-center">
 
-            <Fecha url="/assets/img/eventos/fechas.jpg"></Fecha>
-            <Fecha url="/assets/img/eventos/agosto-01.jpg"></Fecha>
-            <Fecha url="/assets/img/eventos/agosto-02.jpg"></Fecha>
-            <Fecha url="/assets/img/eventos/agosto-03.jpg"></Fecha>
-            <Fecha url="/assets/img/eventos/agosto-04.jpg"></Fecha>
-            <Fecha url="/assets/img/eventos/agosto-05.jpg"></Fecha>
-            <Fecha url="/assets/img/eventos/agosto-06.jpg"></Fecha>
-            <Fecha url="/assets/img/eventos/agosto-07.jpg"></Fecha>
-            <Fecha url="/assets/img/eventos/agosto-08.jpg"></Fecha>
-            <Fecha url="/assets/img/eventos/agosto-09.jpg"></Fecha>
-            <Fecha url="/assets/img/eventos/agosto-10.jpg"></Fecha>
+            <Fecha url="/assets/img/eventos/fechas.png" title="Fechas importantes"></Fecha>
+            <Fecha url="/assets/img/eventos/sept-01.jpg" title="Mes de la salud bucal"></Fecha>
+            <Fecha url="/assets/img/eventos/sept-02.jpg" title="Entrega de proyectos Science Fair"></Fecha>
+            <Fecha url="/assets/img/eventos/sept-03.jpg" title="Acto Cívico / Feria del maíz"></Fecha>
+            <Fecha url="/assets/img/eventos/sept-04.jpg" title="Vacación - Día de la Independencia"></Fecha>
+            <Fecha url="/assets/img/eventos/sept-05.jpg" title="Toma de fotografía para carnet"></Fecha>
+            <Fecha url="/assets/img/eventos/sept-06.jpg" title="Elección gobierno estudiantil"></Fecha>
+            <Fecha url="/assets/img/eventos/sept-07.jpg" title="Semana de las ciencias"></Fecha>
+            <Fecha url="/assets/img/eventos/sept-08.jpg" title="Día del niño PTA"></Fecha>
 
         </div>
 

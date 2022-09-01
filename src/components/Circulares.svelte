@@ -8,11 +8,18 @@
     } )
 
     const miVenobox = () => {
+
         new VenoBox({
+            selector: '.venobox',
             spinner    : 'grid',
+            spinColor    : '#fbb802',
+            border: '5px',
+            bgcolor: '#fbb802',
             infinigall: true,
             numeration: true,
-            spinColor    : '#fbb802',
+            titleattr: 'title',
+            navTouch: true,
+            toolsColor: '#fbb802',
         });
     }
 
