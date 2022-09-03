@@ -4,13 +4,17 @@
     export let esp;
 
     onMount( () => {
-        miVenobox()
+        sLightbox()
     } )
 
-    const miVenobox = () => {
+    const sLightbox = () => {
+
+        new SimpleLightbox('.gallery a', {
+            overlayOpacity: 0.9,
+            captionPosition: 'outside',
+        })
 
         // jQuery('.venobox').venobox({
-        //     // selector: '.venobox',
         //     spinner    : 'cube-grid',
         //     spinColor    : '#fbb802',
         //     border: '5px',
@@ -22,23 +26,20 @@
         //     numerationColor: '#fbb802',
         //     titleattr: 'title',
         //     titleColor: '#fbb802',
-        //     // navTouch: true,
-        //     // toolsColor: '#fbb802',
-        //     // overlayClose: false
         // });
 
-        new VenoBox({
-            selector: '.venobox',
-            spinner    : 'grid',
-            spinColor    : '#fbb802',
-            border: '5px',
-            bgcolor: '#fbb802',
-            infinigall: true,
-            numeration: true,
-            titleattr: 'title',
-            navTouch: true,
-            toolsColor: '#fbb802',
-        });
+        // new VenoBox({
+        //     selector: '.venobox',
+        //     spinner    : 'grid',
+        //     spinColor    : '#fbb802',
+        //     border: '5px',
+        //     bgcolor: '#fbb802',
+        //     infinigall: true,
+        //     numeration: true,
+        //     titleattr: 'title',
+        //     navTouch: false,
+        //     toolsColor: '#fbb802',
+        // });
     }
 </script>
 <section id="fechas" class="container-fluid">
@@ -47,7 +48,7 @@
         <h2 Class="h2 text-center titulo-seccion">{ esp ? "Fechas Importantes" : "Important Dates" }</h2>
         <h4 class="text-center sub-titulo-seccion">{ esp ? "Información Importante" : "Important Information" }</h4>
 
-        <div id="info" class="row row-cols-2 row-cols-sm-3 row-cols-md-4 d-flex justify-content-center">
+        <div id="info" class="gallery row row-cols-2 row-cols-sm-3 row-cols-md-4 d-flex justify-content-center">
 
             <Fecha url="/assets/img/eventos/fechas.png" title="Fechas importantes"></Fecha>
             <Fecha url="/assets/img/eventos/sept-01.jpg" title="Mes de la salud bucal"></Fecha>

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'ABC_v22.09.01-3-1';
+const CACHE_NAME = 'ABC_v22.09.03';
 urlsToCache = [
     // ? Views ***************************
     '/',
@@ -24,10 +24,10 @@ urlsToCache = [
 
     // ? Javascript + css **************** 
     '/App.js',
-    '/assets/js/bundle.js',        
-    '/assets/js/bundle.css',
     '/manifest.json',
     '/carga-sw.js',
+    '/assets/js/bundle.js',        
+    '/assets/js/bundle.css',
 
     // ? Documentos ********************** 
     // '/assets/documents/Manual-de-convivencia-2021-2022.pdf',

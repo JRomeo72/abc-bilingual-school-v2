@@ -63,31 +63,6 @@ server.get("*", function(req, res) {
 			
 				<script src="/carga-sw.js"></script>
 				<script src="/assets/js/bundle.js"></script>
-				// <script src="/assets/js/venobox-v192.js"></script>
-
-				// <script>
-
-				// 	window.addEventListener('load', () => {
-
-				// 		jQuery('.venobox').venobox({
-				// 			// selector: '.venobox',
-				// 			spinner    : 'cube-grid',
-				// 			spinColor    : '#fbb802',
-				// 			border: '5px',
-				// 			bgcolor: '#fbb802',
-				// 			arrowsColor: '#fbb802',
-				// 			closeColor : "#fbb802",
-				// 			infinigall: true,
-				// 			numeratio: true,
-				// 			numerationColor: '#fbb802',
-				// 			titleattr: 'title',
-				// 			titleColor: '#fbb802',
-				// 			// navTouch: true,
-				// 			// toolsColor: '#fbb802',
-				// 			// overlayClose: false
-				// 		});
-				// 	})
-				// </script>
 			
 			</body>
 		</html>

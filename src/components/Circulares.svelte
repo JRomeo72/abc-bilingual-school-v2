@@ -4,23 +4,15 @@
     export let esp;
 
     onMount( () => {
-        miVenobox()
+        sLightbox()
     } )
 
-    const miVenobox = () => {
+    const sLightbox = () => {
 
-        new VenoBox({
-            selector: '.venobox',
-            spinner    : 'grid',
-            spinColor    : '#fbb802',
-            border: '5px',
-            bgcolor: '#fbb802',
-            infinigall: true,
-            numeration: true,
-            titleattr: 'title',
-            navTouch: true,
-            toolsColor: '#fbb802',
-        });
+        new SimpleLightbox('.gallery a', {
+            overlayOpacity: 0.9,
+            captionPosition: 'outside',
+        })
     }
 
 </script>

@@ -19,41 +19,37 @@
 
 	onMount( () => {
 
-		// jQuery(document).ready(function(){
+		// ESTE CODIGO HACE QUE EL MENU APARESCA Y SE VALLA
+		var flag = false;
+		var scroll;
+		var nav = document.querySelector("#navbar-fixed");
 
-			// ESTE CODIGO HACE QUE EL MENU APARESCA Y SE VALLA
-			var flag = false;
-			var scroll;
-			var nav = document.querySelector("#navbar-fixed");
+		window.onscroll = function(){
+			var scroll = document.documentElement.scrollTop;
 
-			window.onscroll = function(){
-				var scroll = document.documentElement.scrollTop;
-
-				if(scroll >1000){
-					if(!flag){
-						nav.classList.add('animated', 'fadeInDown');
-						flag = true;
-					}
-
-				}
-				else{
-					if(flag){
-						nav.classList.remove('fadeInDown');
-						nav.classList.add('fadeOutUp');
-						flag = false;
-						setTimeout( function () {
-							nav.classList.remove('animated', 'fadeOutUp');
-
-						}, 200, 'easeInOutExpo' );
-					}
-					
-					
-
+			if(scroll >1000){
+				if(!flag){
+					nav.classList.add('animated', 'fadeInDown');
+					flag = true;
 				}
 
-			};
+			}
+			else{
+				if(flag){
+					nav.classList.remove('fadeInDown');
+					nav.classList.add('fadeOutUp');
+					flag = false;
+					setTimeout( function () {
+						nav.classList.remove('animated', 'fadeOutUp');
 
-		// });
+					}, 200, 'easeInOutExpo' );
+				}
+				
+				
+
+			}
+
+		};
 
 		let contentMessage = document.querySelector("#contentMessage");
 		let messages = {
