@@ -32,10 +32,9 @@ if ('serviceWorker' in navigator) {
 					const installingWorker = reg.installing;
 					console.log('A new service worker is being installed:', installingWorker)
 	
-					setTimeout(() => {
-						alert('Hay una version nueva de esta Web App, reinicia el navegador para efectuar los cambios');
-						// location.reload();
-					}, 10000);
+					alert('Hay una version nueva de esta Web App, reinicia el navegador para efectuar los cambios');
+					location.reload();
+
 				});
 			}
 
