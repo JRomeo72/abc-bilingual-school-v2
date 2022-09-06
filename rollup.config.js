@@ -73,7 +73,7 @@ export default [
 	},
 	{
 		// Server bundle
-		// Este es el archivo re renderizara el servidor
+		// Este es el archivo que renderizara el servidor
 		input: "src/App.svelte",
 		output: {
 			exports: "default",
