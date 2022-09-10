@@ -11,23 +11,23 @@ export const navDropEn = ["Menu","About us","Information"];
 
 // ? Menú de cafetería 
 export const cafeteria = [
-    "Semana del 5 al 9 de Septiembre",
+    "Semana del 12 al 16 de Septiembre",
 
     // *LUNES *********** 
-    "Tornillos con queso.",
+    "Chuleta de res.",
     // *MARTES ********** 
-    "Tortitas de carne.",
+    "Lasaña a la boloñesa.",
     // *MIERCOLES ******* 
-    "Pollo a la plancha.",
+    "Pollo guisado.",
     // *JUEVES ********** 
-    "Picado de verduras.",
+    "Asueto, no hay clases.",
     // *VIERNES ********* 
-    "Chilaquiles con queso",
+    "Asueto, no hay clases",
 
     // *--------------------------- 
-    "Menú del 5 al 9 de septiembre",
-    "Menu from september 5 to 9",
-    "September 3, 2022"
+    "Menú del 12 al 16 de septiembre",
+    "Menu from september 12 to 16",
+    "September 10, 2022"
 ];
 
 export let equipos = {
