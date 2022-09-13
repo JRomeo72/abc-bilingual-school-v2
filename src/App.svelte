@@ -3,7 +3,7 @@
 	import { onMount } from 'svelte';
 	import { Router, Route } from 'svelte-routing';
 	// import { checkConnection } from './views/Common.svelte';
-	// import Spinner from './components/Spinner.svelte';
+	import Spinner from './components/Spinner.svelte';
 	import Header from './components/Header.svelte';
 	import Inicio from './views/Inicio.svelte';
 	import Institucion from './views/Institucion.svelte';
@@ -20,12 +20,18 @@
 	onMount( () => {
 
 		// ESTE CODIGO HACE QUE EL MENU APARESCA Y SE VALLA
-		var flag = false;
-		var scroll;
-		var nav = document.querySelector("#navbar-fixed");
+		let flag = false;
+		let spinner = document.querySelector('#spinner')
+		let nav = document.querySelector("#navbar-fixed");
+
+
+
+		spinner.style.opcity = 0;
+		spinner.style.display = 'none';
+
 
 		window.onscroll = function(){
-			var scroll = document.documentElement.scrollTop;
+			let scroll = document.documentElement.scrollTop;
 
 			if(scroll >1000){
 				if(!flag){
@@ -71,63 +77,65 @@
 
 </script>
 
-<!-- <Spinner /> -->
-<Router url="{url}">
-	<Header />
+<Spinner />
+<div class="main">
+	<Router url="{url}">
+		<Header />
+		
+		<Route path="/contact-us">
+			<Contactanos esp = {false} />
+		</Route>
+		<Route path="/contactanos">
+			<Contactanos esp = {true} />
+		</Route>
 	
-	<Route path="/contact-us">
-		<Contactanos esp = {false} />
-	</Route>
-	<Route path="/contactanos">
-		<Contactanos esp = {true} />
-	</Route>
-
-	<Route path="/important-dates">
-		<Fechas esp = {false} />
-	</Route>
-	<Route path="/fechas-importantes">
-		<Fechas esp = {true} />
-	</Route>
-
-	<Route path="/newsletter">
-		<Circulares esp = {false} />
-	</Route>
-	<Route path="/circulares">
-		<Circulares esp = {true} />
-	</Route>
-
-	<Route path="/school-life">
-		<VEscolar esp = {false} />
-	</Route>
-	<Route path="/vida-escolar">
-		<VEscolar esp = {true} />
-	</Route>
-
-	<Route path="/our-team/*">
-		<Personal esp = {false} />
-	</Route>
-	<Route path="/personal/*">
-		<Personal esp = {true} />
-	</Route>
-
-	<Route path="/institution">
-		<Institucion esp = {false} />
-	</Route>
-	<Route path="/institucion">
-		<Institucion esp = {true} />
-	</Route>
-
-	<Route path="/home">
-		<Inicio esp = {false} />
-	</Route>
-	<Route path="/">
-		<Inicio esp = {true} />
-	</Route>
-
-	<Route path="/*" component="{NoFound}" />
-
-
-</Router>
-<Cafeteria />
+		<Route path="/important-dates">
+			<Fechas esp = {false} />
+		</Route>
+		<Route path="/fechas-importantes">
+			<Fechas esp = {true} />
+		</Route>
+	
+		<Route path="/newsletter">
+			<Circulares esp = {false} />
+		</Route>
+		<Route path="/circulares">
+			<Circulares esp = {true} />
+		</Route>
+	
+		<Route path="/school-life">
+			<VEscolar esp = {false} />
+		</Route>
+		<Route path="/vida-escolar">
+			<VEscolar esp = {true} />
+		</Route>
+	
+		<Route path="/our-team/*">
+			<Personal esp = {false} />
+		</Route>
+		<Route path="/personal/*">
+			<Personal esp = {true} />
+		</Route>
+	
+		<Route path="/institution">
+			<Institucion esp = {false} />
+		</Route>
+		<Route path="/institucion">
+			<Institucion esp = {true} />
+		</Route>
+	
+		<Route path="/home">
+			<Inicio esp = {false} />
+		</Route>
+		<Route path="/">
+			<Inicio esp = {true} />
+		</Route>
+	
+		<Router path="/*" component="{NoFound}" />
+	
+	
+	</Router>
+	<Cafeteria />
+</div>
 
 <div id="contentMessage" class="card-body text-center animate p-2"></div>
