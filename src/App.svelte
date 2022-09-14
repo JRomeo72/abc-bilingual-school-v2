@@ -26,10 +26,10 @@
 		let nav = document.querySelector("#navbar-fixed");
 
 		// setTimeout(() => {
-			spinner.classList.add('fade-out-animation');
+			// spinner.classList.add('fade-out-animation');
 
 			main.style.display = 'block';
-			setTimeout(() => { main.style.opacity = 1}, 100);
+			setTimeout(() => { main.style.opacity = 1}, 500);
 
 		// }, 2000);
 
