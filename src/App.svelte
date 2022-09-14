@@ -25,13 +25,7 @@
 		let main = document.querySelector('.main');
 		let nav = document.querySelector("#navbar-fixed");
 
-		// setTimeout(() => {
-			spinner.classList.add('fade-out-animation');
-
-			main.style.display = 'block';
-			setTimeout(() => { main.style.opacity = 1}, 100);
-
-		// }, 2000);
+		spinner.classList.add('fade-out-animation');
 
 		window.onscroll = function(){
 			let scroll = document.documentElement.scrollTop;
@@ -81,64 +75,64 @@
 </script>
 
 <Spinner />
-<div class="main">
-	<Router url="{url}">
-		<Header />
-		
-		<Route path="/contact-us">
-			<Contactanos esp = {false} />
-		</Route>
-		<Route path="/contactanos">
-			<Contactanos esp = {true} />
-		</Route>
+
+<Router url="{url}">
+	<Header />
 	
-		<Route path="/important-dates">
-			<Fechas esp = {false} />
-		</Route>
-		<Route path="/fechas-importantes">
-			<Fechas esp = {true} />
-		</Route>
-	
-		<Route path="/newsletter">
-			<Circulares esp = {false} />
-		</Route>
-		<Route path="/circulares">
-			<Circulares esp = {true} />
-		</Route>
-	
-		<Route path="/school-life">
-			<VEscolar esp = {false} />
-		</Route>
-		<Route path="/vida-escolar">
-			<VEscolar esp = {true} />
-		</Route>
-	
-		<Route path="/our-team/*">
-			<Personal esp = {false} />
-		</Route>
-		<Route path="/personal/*">
-			<Personal esp = {true} />
-		</Route>
-	
-		<Route path="/institution">
-			<Institucion esp = {false} />
-		</Route>
-		<Route path="/institucion">
-			<Institucion esp = {true} />
-		</Route>
-	
-		<Route path="/home">
-			<Inicio esp = {false} />
-		</Route>
-		<Route path="/">
-			<Inicio esp = {true} />
-		</Route>
-	
-		<Router path="/*" component="{NoFound}" />
-	
-	
-	</Router>
-	<Cafeteria />
-</div>
+	<Route path="/contact-us">
+		<Contactanos esp = {false} />
+	</Route>
+	<Route path="/contactanos">
+		<Contactanos esp = {true} />
+	</Route>
+
+	<Route path="/important-dates">
+		<Fechas esp = {false} />
+	</Route>
+	<Route path="/fechas-importantes">
+		<Fechas esp = {true} />
+	</Route>
+
+	<Route path="/newsletter">
+		<Circulares esp = {false} />
+	</Route>
+	<Route path="/circulares">
+		<Circulares esp = {true} />
+	</Route>
+
+	<Route path="/school-life">
+		<VEscolar esp = {false} />
+	</Route>
+	<Route path="/vida-escolar">
+		<VEscolar esp = {true} />
+	</Route>
+
+	<Route path="/our-team/*">
+		<Personal esp = {false} />
+	</Route>
+	<Route path="/personal/*">
+		<Personal esp = {true} />
+	</Route>
+
+	<Route path="/institution">
+		<Institucion esp = {false} />
+	</Route>
+	<Route path="/institucion">
+		<Institucion esp = {true} />
+	</Route>
+
+	<Route path="/home">
+		<Inicio esp = {false} />
+	</Route>
+	<Route path="/">
+		<Inicio esp = {true} />
+	</Route>
+
+	<Router path="/*" component="{NoFound}" />
+
+
+</Router>
+<Cafeteria />
+
 
 <div id="contentMessage" class="card-body text-center animate p-2"></div>
