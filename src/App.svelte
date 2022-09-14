@@ -21,14 +21,17 @@
 
 		// ESTE CODIGO HACE QUE EL MENU APARESCA Y SE VALLA
 		let flag = false;
-		let spinner = document.querySelector('#spinner')
+		let spinner = document.querySelector('#spinner');
+		let main = document.querySelector('.main');
 		let nav = document.querySelector("#navbar-fixed");
 
+		// setTimeout(() => {
+			spinner.classList.add('fade-out-animation');
 
+			main.style.display = 'block';
+			setTimeout(() => { main.style.opacity = 1}, 100);
 
-		spinner.style.opcity = 0;
-		spinner.style.display = 'none';
-
+		// }, 2000);
 
 		window.onscroll = function(){
 			let scroll = document.documentElement.scrollTop;
