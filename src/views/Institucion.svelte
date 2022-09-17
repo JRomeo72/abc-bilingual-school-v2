@@ -6,11 +6,11 @@
     import Footer from '../components/Footer.svelte';
 
     export let esp;
-    let hidden = false, pagina = 2, url = [ "institucion", "institution" ];
+    let hidden=false, pagina=2, setTime=200, url=[ "institucion", "institution" ];
 </script>
 
 <main>
-    <Common {esp} clase=".link-conocenos" {url} />
+    <Common {esp} clase=".link-conocenos" {setTime} {url} />
     <Nosotros {esp} {hidden} />
     <Instituciones />
     <Fotos />

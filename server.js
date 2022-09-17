@@ -10,7 +10,13 @@ server.get("*", function(req, res) {
 
 	const { html } = app.render({ url: req.url });
 
-	res.set('Cache-control', 'public, max-age=600');
+	res.set({
+		'Cache-control': 'public, max-age=600',
+		'Content-Type': 'text/html; charset=utf-8'
+	});
+	// res.writeHead(200, {
+	// 	'Content-Type': 'text/html; charset=utf-8',
+	// });
 
 	res.write(`
 		<!DOCTYPE html>

@@ -12,11 +12,11 @@
     import Footer from '../components/Footer.svelte';
 
     export let esp;
-    let hidden = true, pagina = 1, inicio = true, url = [ "/", "home" ];
+    let hidden=true, pagina=1, inicio=true, setTime=800, url=[ "/", "home" ];
 </script>
 
 <main>
-    <Common {esp} {inicio} {url}  />
+    <Common {esp} {inicio} {setTime} {url}  />
     <Slider {esp} />
     <Servicios {esp} />
     <Instituciones />

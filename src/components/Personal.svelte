@@ -2,9 +2,10 @@
     import Common from '../views/Common.svelte';
     import EqItems from './EqItems.svelte';
     export let esp, eq, url;
+    let  setTime=200;
 </script>
 
-<Common {esp} clase = ".link-conocenos" {url} />
+<Common {esp} clase=".link-conocenos" {setTime} {url} />
 <section id="equipo">
     <div class="container my-section team-section pt-3">
 

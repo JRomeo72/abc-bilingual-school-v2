@@ -1,11 +1,11 @@
 <script>
     import { onMount } from 'svelte';
-    import { menuItems, menuLinks, menuDrop, conectionOnLine } from '../stores/stores';
+    import { initApp, menuItems, menuLinks, menuDrop, conectionOnLine } from '../stores/stores';
     import { contentWayPointAnimalo, menuRemoveClass, goScrollUp } from '../assets/js/scripts';
     import { navItemsEs, navItemsEn, navLinksEs, navLinksEn, navDropEs, navDropEn, } from '../assets/js/data';
     import Language from '../components/Language.svelte'
 
-    export let esp, clase, url=[];
+    export let esp, clase, setTime, url=[];
     let page;
     
     // console.log(url);
@@ -117,18 +117,25 @@
 
 
     onMount( async () => {
-        window.addEventListener("online",  checkConnection);
+        window.addEventListener("online", checkConnection);
     	window.addEventListener("offline", checkConnection);
+
         if(!navigator.onLine){
             checkConnection();
         }
 
         menuRemoveClass(clase);
-        let tiempo = await goScrollUp();
-        setTimeout(() => {
+
+        await goScrollUp();
+
+        if($initApp) {
             contentWayPointAnimalo();
-        }, tiempo);
-        // console.log(navigator.onLine)
+        }else{
+            initApp.update( n => true );
+            setTimeout(() => {
+                contentWayPointAnimalo();
+            }, setTime);
+        }
 
     } );
 

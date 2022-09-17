@@ -39,7 +39,7 @@ if ('serviceWorker' in navigator) {
 			setInterval(() => {
 				reg.update();
 				console.log('Comprobando cada 1mn')
-			}, 10000);
+			}, 60000);
 
 		})
 		.catch(err => console.warn('Error al tratar de registrar el sw', err));

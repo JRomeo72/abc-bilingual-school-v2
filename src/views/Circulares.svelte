@@ -7,12 +7,12 @@
     import Footer from '../components/Footer.svelte';
 
     export let esp;
-    let pagina = 5, url = [ "circulares", "newsletter" ];
+    let pagina = 5, setTime=200, url = [ "circulares", "newsletter" ];
 
 </script>
 
 <main>
-    <Common {esp} clase = ".link-informacion" {url} />
+    <Common {esp} clase=".link-informacion" {setTime} {url} />
     <Circulares {esp} />
     <Testimoniales {esp} />
     <Fotos />

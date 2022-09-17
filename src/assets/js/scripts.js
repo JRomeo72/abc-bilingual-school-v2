@@ -1,6 +1,13 @@
 // ? Animacion de los elementos con el Scroll 
 export const contentWayPointAnimalo = () => {
 
+    function easeInOutExpo(t, b, c, d) {
+		if (t==0) return b;
+		if (t==d) return b+c;
+		if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
+		return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
+	}
+
     var waypoints = document.querySelectorAll('.animalo');
     waypoints.forEach( waypoint => {
         let _waypoint = new Waypoint ({
@@ -13,20 +20,19 @@ export const contentWayPointAnimalo = () => {
                     
                     setTimeout(() => {
                         let el = document.querySelectorAll('.animalo.item-animate');
-
+                        let largo = el.length;
                         el.forEach((e, index) =>{
-                            
                             setTimeout( () => {
                                 let effect = e.dataset.animateEffect;
                                 e.classList.add(effect, 'animated');
                                 e.classList.remove('item-animate');
-                            },  index * 350 , 'easeInOutExpo');
+                            }, (index + 1) * 350 , easeInOutExpo(index, 1, 100, largo));
 
                         })
 
-                    }, 100);
+                    }, 300);
                 }
-            }, offset: '95%'
+            }, offset: '90%'
         })
     } )
 }
@@ -55,10 +61,16 @@ export const goScrollUp = () => {
                 left:0,
                 behavior:"smooth"
             })
-            resolve(1000);
+
+            setInterval(() => {
+                if ( document.documentElement.scrollTop == 0 ) resolve(true);
+            }, 10);
+
+            
         }else{
-            resolve(100); 
+            resolve(true);
         }
+
     } )
 
 }

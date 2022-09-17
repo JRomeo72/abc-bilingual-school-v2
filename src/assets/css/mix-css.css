@@ -30669,9 +30669,9 @@ body.lb-disable-scrolling {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 10;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
+  z-index: 100;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .container_spinner img {
   width: 130px;

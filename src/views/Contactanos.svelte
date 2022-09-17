@@ -6,11 +6,11 @@
     import Footer from '../components/Footer.svelte';
 
     export let esp, url = [ "/contactanos", "/contact-us" ];
-    let pagina = 6;
+    let pagina=6, setTime=200;
 </script>
 
 <main>
-    <Common {esp} {url} />
+    <Common {esp} {setTime} {url} />
     <Boxes {esp} />
     <Formulario {esp} />
     <Instituciones />

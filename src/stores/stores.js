@@ -6,3 +6,4 @@ export const menuLinks = writable( navLinksEs );
 export const menuDrop = writable( navDropEs );
 
 export const conectionOnLine = writable(true);
+export const initApp = writable(false);
